@@ -1,0 +1,1019 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+    <title>HouseCare</title>
+    <link rel="stylesheet" href="src/styles/swiper.css">
+    <link rel="stylesheet" href="src/styles/navigation.css">
+    <link rel="stylesheet" href="src/styles/pagination.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="src/styles/swiper-bundle.min.css">
+    <link rel="stylesheet" href="src/styles/magnific-popup.css">
+    <link rel="stylesheet/less" href="dist/style.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/less"></script>
+</head>
+<body>
+
+<header class="header">
+    <div class="header__top">
+        <div class="header__container">
+            <div class="header__menu">
+                <button type="button" id="open-btn" class="header__menu-button">
+                    <img src="images/icon-nav.png" alt="nav-icon">
+                </button>
+                <div class="menu" id="menu">
+                    <div class="menu__container">
+                        <button type="button" id="close-btn" class="menu-button">
+                            <img src="images/close-icon.png" alt="">
+                        </button>
+                        <div class="menu__title">Меню</div>
+                        <ul class="menu__list">
+                            <li class="menu__item">
+                                <a href="#" class="menu__link menu__link-active">Каталог</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#" class="menu__link menu__link-active" id="menu-technology">Технологии</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#" class="menu__link menu__link-active" id="menu-project">Наши проекты</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#" class="menu__link menu__link-active">Производство</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#" class="menu__link menu__link-active" id="menu-conditions">Гарантия</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#" class="menu__link menu__link-active">Отзывы</a>
+                            </li>
+                        </ul>
+                        <div class="social menu__social">
+                            <a href="#">
+                                <svg width="35px" height="40px" viewBox="0 0 24 24" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                          d="M12 18C15.3137 18 18 15.3137 18 12C18 8.68629 15.3137 6 12 6C8.68629 6 6 8.68629 6 12C6 15.3137 8.68629 18 12 18ZM12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z"
+                                          fill="#ffffff"/>
+                                    <path d="M18 5C17.4477 5 17 5.44772 17 6C17 6.55228 17.4477 7 18 7C18.5523 7 19 6.55228 19 6C19 5.44772 18.5523 5 18 5Z"
+                                          fill="#ffffff"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                          d="M1.65396 4.27606C1 5.55953 1 7.23969 1 10.6V13.4C1 16.7603 1 18.4405 1.65396 19.7239C2.2292 20.8529 3.14708 21.7708 4.27606 22.346C5.55953 23 7.23969 23 10.6 23H13.4C16.7603 23 18.4405 23 19.7239 22.346C20.8529 21.7708 21.7708 20.8529 22.346 19.7239C23 18.4405 23 16.7603 23 13.4V10.6C23 7.23969 23 5.55953 22.346 4.27606C21.7708 3.14708 20.8529 2.2292 19.7239 1.65396C18.4405 1 16.7603 1 13.4 1H10.6C7.23969 1 5.55953 1 4.27606 1.65396C3.14708 2.2292 2.2292 3.14708 1.65396 4.27606ZM13.4 3H10.6C8.88684 3 7.72225 3.00156 6.82208 3.0751C5.94524 3.14674 5.49684 3.27659 5.18404 3.43597C4.43139 3.81947 3.81947 4.43139 3.43597 5.18404C3.27659 5.49684 3.14674 5.94524 3.0751 6.82208C3.00156 7.72225 3 8.88684 3 10.6V13.4C3 15.1132 3.00156 16.2777 3.0751 17.1779C3.14674 18.0548 3.27659 18.5032 3.43597 18.816C3.81947 19.5686 4.43139 20.1805 5.18404 20.564C5.49684 20.7234 5.94524 20.8533 6.82208 20.9249C7.72225 20.9984 8.88684 21 10.6 21H13.4C15.1132 21 16.2777 20.9984 17.1779 20.9249C18.0548 20.8533 18.5032 20.7234 18.816 20.564C19.5686 20.1805 20.1805 19.5686 20.564 18.816C20.7234 18.5032 20.8533 18.0548 20.9249 17.1779C20.9984 16.2777 21 15.1132 21 13.4V10.6C21 8.88684 20.9984 7.72225 20.9249 6.82208C20.8533 5.94524 20.7234 5.49684 20.564 5.18404C20.1805 4.43139 19.5686 3.81947 18.816 3.43597C18.5032 3.27659 18.0548 3.14674 17.1779 3.0751C16.2777 3.00156 15.1132 3 13.4 3Z"
+                                          fill="#ffffff"/>
+                                </svg>
+                            </a>
+                            <a href="#">
+                                <svg width="35px" height="40px" viewBox="0 0 24 24" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                          d="M23.1117 4.49449C23.4296 2.94472 21.9074 1.65683 20.4317 2.227L2.3425 9.21601C0.694517 9.85273 0.621087 12.1572 2.22518 12.8975L6.1645 14.7157L8.03849 21.2746C8.13583 21.6153 8.40618 21.8791 8.74917 21.968C9.09216 22.0568 9.45658 21.9576 9.70712 21.707L12.5938 18.8203L16.6375 21.8531C17.8113 22.7334 19.5019 22.0922 19.7967 20.6549L23.1117 4.49449ZM3.0633 11.0816L21.1525 4.0926L17.8375 20.2531L13.1 16.6999C12.7019 16.4013 12.1448 16.4409 11.7929 16.7928L10.5565 18.0292L10.928 15.9861L18.2071 8.70703C18.5614 8.35278 18.5988 7.79106 18.2947 7.39293C17.9906 6.99479 17.4389 6.88312 17.0039 7.13168L6.95124 12.876L3.0633 11.0816ZM8.17695 14.4791L8.78333 16.6015L9.01614 15.321C9.05253 15.1209 9.14908 14.9366 9.29291 14.7928L11.5128 12.573L8.17695 14.4791Z"
+                                          fill="#ffffff"/>
+                                </svg>
+                            </a>
+                            <a href="#">
+                                <svg width="35px" height="40px" viewBox="0 0 24 24" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                          d="M9.49614 7.13176C9.18664 6.9549 8.80639 6.95617 8.49807 7.13509C8.18976 7.31401 8 7.64353 8 8V16C8 16.3565 8.18976 16.686 8.49807 16.8649C8.80639 17.0438 9.18664 17.0451 9.49614 16.8682L16.4961 12.8682C16.8077 12.6902 17 12.3589 17 12C17 11.6411 16.8077 11.3098 16.4961 11.1318L9.49614 7.13176ZM13.9844 12L10 14.2768V9.72318L13.9844 12Z"
+                                          fill="#ffffff"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                          d="M0 12C0 8.25027 0 6.3754 0.954915 5.06107C1.26331 4.6366 1.6366 4.26331 2.06107 3.95491C3.3754 3 5.25027 3 9 3H15C18.7497 3 20.6246 3 21.9389 3.95491C22.3634 4.26331 22.7367 4.6366 23.0451 5.06107C24 6.3754 24 8.25027 24 12C24 15.7497 24 17.6246 23.0451 18.9389C22.7367 19.3634 22.3634 19.7367 21.9389 20.0451C20.6246 21 18.7497 21 15 21H9C5.25027 21 3.3754 21 2.06107 20.0451C1.6366 19.7367 1.26331 19.3634 0.954915 18.9389C0 17.6246 0 15.7497 0 12ZM9 5H15C16.9194 5 18.1983 5.00275 19.1673 5.10773C20.0989 5.20866 20.504 5.38448 20.7634 5.57295C21.018 5.75799 21.242 5.98196 21.4271 6.23664C21.6155 6.49605 21.7913 6.90113 21.8923 7.83269C21.9973 8.80167 22 10.0806 22 12C22 13.9194 21.9973 15.1983 21.8923 16.1673C21.7913 17.0989 21.6155 17.504 21.4271 17.7634C21.242 18.018 21.018 18.242 20.7634 18.4271C20.504 18.6155 20.0989 18.7913 19.1673 18.8923C18.1983 18.9973 16.9194 19 15 19H9C7.08058 19 5.80167 18.9973 4.83269 18.8923C3.90113 18.7913 3.49605 18.6155 3.23664 18.4271C2.98196 18.242 2.75799 18.018 2.57295 17.7634C2.38448 17.504 2.20866 17.0989 2.10773 16.1673C2.00275 15.1983 2 13.9194 2 12C2 10.0806 2.00275 8.80167 2.10773 7.83269C2.20866 6.90113 2.38448 6.49605 2.57295 6.23664C2.75799 5.98196 2.98196 5.75799 3.23664 5.57295C3.49605 5.38448 3.90113 5.20866 4.83269 5.10773C5.80167 5.00275 7.08058 5 9 5Z"
+                                          fill="#ffffff"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img src="images/logo.png" class="logo" alt="">
+            <div class="contact">
+                <a href="tel:+380967367281" class="contact-phone">+380 (96) 73-67-281</a>
+                <a href="#" class="contact-link">
+                    <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            width="32.5px" height="32.5px">
+                        <path fill-rule="evenodd" stroke="rgb(236, 198, 107)" stroke-width="1px" stroke-linecap="butt"
+                              stroke-linejoin="miter" fill="none"
+                              d="M15.1000,1.000 C24.284,1.000 30.1000,7.716 30.1000,16.000 C30.1000,24.284 24.284,30.1000 15.1000,30.1000 C7.716,30.1000 0.1000,24.284 0.1000,16.000 C0.1000,7.716 7.716,1.000 15.1000,1.000 Z"/>
+                        <path fill-rule="evenodd" stroke="rgb(236, 198, 107)" stroke-width="1px" stroke-linecap="butt"
+                              stroke-linejoin="miter" fill="none"
+                              d="M16.004,7.002 C20.975,7.002 25.004,11.031 25.004,16.002 C25.004,20.972 20.975,25.002 16.004,25.002 C11.034,25.002 7.004,20.972 7.004,16.002 C7.004,11.031 11.034,7.002 16.004,7.002 Z"/>
+                        <path fill-rule="evenodd" fill="rgb(236, 198, 107)"
+                              d="M15.1000,12.500 C17.933,12.500 19.500,14.067 19.500,16.000 C19.500,17.933 17.933,19.500 15.1000,19.500 C14.067,19.500 12.500,17.933 12.500,16.000 C12.500,14.067 14.067,12.500 15.1000,12.500 Z"/>
+                    </svg>
+                    <span>Заказать звонок</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="hero">
+        <div class="hero__container">
+            <a href="#" class="hero__arrow" id="hero__arrow">
+                <svg width="25px" height="50px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.33199 16.3154C6.94146 15.9248 6.3083 15.9248 5.91777 16.3154C5.52725 16.7059 5.52725 17.339 5.91777 17.7296L10.5834 22.3952C11.3644 23.1762 12.6308 23.1762 13.4118 22.3952L18.0802 17.7267C18.4707 17.3362 18.4707 16.703 18.0802 16.3125C17.6897 15.922 17.0565 15.922 16.666 16.3125L13 19.9786V2.0001C13 1.44781 12.5523 1.0001 12 1.0001C11.4477 1.0001 11 1.44781 11 2.0001V19.9833L7.33199 16.3154Z"
+                          fill="#bababa"/>
+                </svg>
+                <span class="hero__text">Листайте вниз</span>
+            </a>
+            <div class="hero__content wow animate__bounceInDown">
+                <h1 class="hero__title">Строительство домов
+                    и коттеджей под ключ</h1>
+                <div class="hero__subtitle">Сможете переехать в готовый дом уже через 3 месяца</div>
+                <button type="button" class="btn hero__btn" id="more-btn">Узнать подробнее</button>
+            </div>
+            <div class="social hero__social">
+                <a href="#">
+                    <?xml version="1.0" encoding="utf-8"?>
+                    <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                    <svg width="35px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M12 18C15.3137 18 18 15.3137 18 12C18 8.68629 15.3137 6 12 6C8.68629 6 6 8.68629 6 12C6 15.3137 8.68629 18 12 18ZM12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z"
+                              fill="#ffffff"/>
+                        <path d="M18 5C17.4477 5 17 5.44772 17 6C17 6.55228 17.4477 7 18 7C18.5523 7 19 6.55228 19 6C19 5.44772 18.5523 5 18 5Z"
+                              fill="#ffffff"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M1.65396 4.27606C1 5.55953 1 7.23969 1 10.6V13.4C1 16.7603 1 18.4405 1.65396 19.7239C2.2292 20.8529 3.14708 21.7708 4.27606 22.346C5.55953 23 7.23969 23 10.6 23H13.4C16.7603 23 18.4405 23 19.7239 22.346C20.8529 21.7708 21.7708 20.8529 22.346 19.7239C23 18.4405 23 16.7603 23 13.4V10.6C23 7.23969 23 5.55953 22.346 4.27606C21.7708 3.14708 20.8529 2.2292 19.7239 1.65396C18.4405 1 16.7603 1 13.4 1H10.6C7.23969 1 5.55953 1 4.27606 1.65396C3.14708 2.2292 2.2292 3.14708 1.65396 4.27606ZM13.4 3H10.6C8.88684 3 7.72225 3.00156 6.82208 3.0751C5.94524 3.14674 5.49684 3.27659 5.18404 3.43597C4.43139 3.81947 3.81947 4.43139 3.43597 5.18404C3.27659 5.49684 3.14674 5.94524 3.0751 6.82208C3.00156 7.72225 3 8.88684 3 10.6V13.4C3 15.1132 3.00156 16.2777 3.0751 17.1779C3.14674 18.0548 3.27659 18.5032 3.43597 18.816C3.81947 19.5686 4.43139 20.1805 5.18404 20.564C5.49684 20.7234 5.94524 20.8533 6.82208 20.9249C7.72225 20.9984 8.88684 21 10.6 21H13.4C15.1132 21 16.2777 20.9984 17.1779 20.9249C18.0548 20.8533 18.5032 20.7234 18.816 20.564C19.5686 20.1805 20.1805 19.5686 20.564 18.816C20.7234 18.5032 20.8533 18.0548 20.9249 17.1779C20.9984 16.2777 21 15.1132 21 13.4V10.6C21 8.88684 20.9984 7.72225 20.9249 6.82208C20.8533 5.94524 20.7234 5.49684 20.564 5.18404C20.1805 4.43139 19.5686 3.81947 18.816 3.43597C18.5032 3.27659 18.0548 3.14674 17.1779 3.0751C16.2777 3.00156 15.1132 3 13.4 3Z"
+                              fill="#ffffff"/>
+                    </svg>
+                </a>
+                <a href="#">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M23.1117 4.49449C23.4296 2.94472 21.9074 1.65683 20.4317 2.227L2.3425 9.21601C0.694517 9.85273 0.621087 12.1572 2.22518 12.8975L6.1645 14.7157L8.03849 21.2746C8.13583 21.6153 8.40618 21.8791 8.74917 21.968C9.09216 22.0568 9.45658 21.9576 9.70712 21.707L12.5938 18.8203L16.6375 21.8531C17.8113 22.7334 19.5019 22.0922 19.7967 20.6549L23.1117 4.49449ZM3.0633 11.0816L21.1525 4.0926L17.8375 20.2531L13.1 16.6999C12.7019 16.4013 12.1448 16.4409 11.7929 16.7928L10.5565 18.0292L10.928 15.9861L18.2071 8.70703C18.5614 8.35278 18.5988 7.79106 18.2947 7.39293C17.9906 6.99479 17.4389 6.88312 17.0039 7.13168L6.95124 12.876L3.0633 11.0816ZM8.17695 14.4791L8.78333 16.6015L9.01614 15.321C9.05253 15.1209 9.14908 14.9366 9.29291 14.7928L11.5128 12.573L8.17695 14.4791Z"
+                              fill="#ffffff"/>
+                    </svg>
+                </a>
+                <a href="#">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M9.49614 7.13176C9.18664 6.9549 8.80639 6.95617 8.49807 7.13509C8.18976 7.31401 8 7.64353 8 8V16C8 16.3565 8.18976 16.686 8.49807 16.8649C8.80639 17.0438 9.18664 17.0451 9.49614 16.8682L16.4961 12.8682C16.8077 12.6902 17 12.3589 17 12C17 11.6411 16.8077 11.3098 16.4961 11.1318L9.49614 7.13176ZM13.9844 12L10 14.2768V9.72318L13.9844 12Z"
+                              fill="#ffffff"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M0 12C0 8.25027 0 6.3754 0.954915 5.06107C1.26331 4.6366 1.6366 4.26331 2.06107 3.95491C3.3754 3 5.25027 3 9 3H15C18.7497 3 20.6246 3 21.9389 3.95491C22.3634 4.26331 22.7367 4.6366 23.0451 5.06107C24 6.3754 24 8.25027 24 12C24 15.7497 24 17.6246 23.0451 18.9389C22.7367 19.3634 22.3634 19.7367 21.9389 20.0451C20.6246 21 18.7497 21 15 21H9C5.25027 21 3.3754 21 2.06107 20.0451C1.6366 19.7367 1.26331 19.3634 0.954915 18.9389C0 17.6246 0 15.7497 0 12ZM9 5H15C16.9194 5 18.1983 5.00275 19.1673 5.10773C20.0989 5.20866 20.504 5.38448 20.7634 5.57295C21.018 5.75799 21.242 5.98196 21.4271 6.23664C21.6155 6.49605 21.7913 6.90113 21.8923 7.83269C21.9973 8.80167 22 10.0806 22 12C22 13.9194 21.9973 15.1983 21.8923 16.1673C21.7913 17.0989 21.6155 17.504 21.4271 17.7634C21.242 18.018 21.018 18.242 20.7634 18.4271C20.504 18.6155 20.0989 18.7913 19.1673 18.8923C18.1983 18.9973 16.9194 19 15 19H9C7.08058 19 5.80167 18.9973 4.83269 18.8923C3.90113 18.7913 3.49605 18.6155 3.23664 18.4271C2.98196 18.242 2.75799 18.018 2.57295 17.7634C2.38448 17.504 2.20866 17.0989 2.10773 16.1673C2.00275 15.1983 2 13.9194 2 12C2 10.0806 2.00275 8.80167 2.10773 7.83269C2.20866 6.90113 2.38448 6.49605 2.57295 6.23664C2.75799 5.98196 2.98196 5.75799 3.23664 5.57295C3.49605 5.38448 3.90113 5.20866 4.83269 5.10773C5.80167 5.00275 7.08058 5 9 5Z"
+                              fill="#ffffff"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+</header>
+
+<section class="projects" id="projects">
+    <div class="container">
+        <h2 class="projects__title">Наши проекты</h2>
+        <div class="projects__container">
+            <div class="project wow animate__backInRight">
+
+                <div class="project__gallery">
+                    <a href="images/house/house003-1.png"><img src="images/house/house003-1.png" alt=""></a>
+                    <div class="project__gallery-flex">
+                        <a href="images/house/house003-2.png">
+                            <img src="images/house/house003-2.png" alt="">
+                        </a>
+                        <a href="images/house/house003-3.png">
+                            <img src="images/house/house003-3.png" alt="">
+                        </a>
+                        <a href="images/house/house003-4.png">
+                            <img src="images/house/house003-4.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="project__content">
+                    <div class="project__name">Modern house 003</div>
+                    <div class="project__info">Этот проект представляет собой красивый и удобный одноэтажный дом с
+                        многоскатной кровлей, эркером и камином на террасе. Его внешний традиционный архитектурный стиль
+                        прекрасно сочетается с современной практичной планировкой интерьера.
+                    </div>
+                    <div class="project__descriptions">
+                        <div class="description">
+                            134 м <sup>2</sup>
+                        </div>
+                        <div class="description">
+                            4<br>спальни
+                        </div>
+                        <div class="description">
+                            2<br>санузла
+                        </div>
+                    </div>
+                    <button type="button" class="btn project__button project__button-first">Получить консультацию</button>
+                    <button type="button"
+                            class="button-transparent project__button project__button-border download-btn">Скачать
+                        PDF-план проекта (2,5
+                        мб)
+                    </button>
+                </div>
+            </div>
+            <div class="project wow animate__backInLeft">
+                <div class="project__gallery">
+                    <a href="images/house/house004-01.png">
+                        <img src="images/house/house004-01.png" alt="">
+                    </a>
+                    <div class="project__gallery-flex">
+                        <a href="images/house/house003-2.png">
+                            <img src="images/house/house003-2.png" alt="">
+                        </a>
+                        <a href="images/house/house003-3.png">
+                            <img src="images/house/house003-3.png" alt="">
+                        </a>
+                        <a href="images/house/house003-4.png">
+                            <img src="images/house/house003-4.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="project__content">
+                    <div class="project__name">Modern house 004</div>
+                    <div class="project__info">Компактный и функциональный дом подкупает простотой решений. Простая
+                        форма и двухскатная кровля позволяет вести строительство быстро и достаточно экономично. Комнаты
+                        сделаны максимально просторными за счет маленьких технических и коммуникационных помещений.
+                    </div>
+                    <div class="project__descriptions">
+                        <div class="description">
+                            145 м <sub>2</sub>
+                        </div>
+                        <div class="description">
+                            3<br> спальни
+                        </div>
+                        <div class="description">
+                            2<br> санузла
+                        </div>
+                    </div>
+                    <button type="button" class="btn project__button project__button-first">Получить консультацию</button>
+                    <button type="button"
+                            class="button-transparent project__button project__button-border download-btn">Скачать
+                        PDF-план проекта (2,5
+                        мб)
+                    </button>
+                </div>
+            </div>
+            <div class="project project__more wow animate__backInRight">
+                <div class="project__gallery">
+                    <a href="images/house/house005-01.jpg">
+                        <img src="images/house/house005-01.jpg" alt="" width="588px" height="390px">
+                    </a>
+                    <div class="project__gallery-flex">
+                        <a href="images/house/house003-2.png">
+                            <img src="images/house/house003-2.png" alt="">
+                        </a>
+                        <a href="images/house/house003-3.png">
+                            <img src="images/house/house003-3.png" alt="">
+                        </a>
+                        <a href="images/house/house003-4.png">
+                            <img src="images/house/house003-4.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="project__content">
+                    <div class="project__name">Modern house 005</div>
+                    <div class="project__info">Компактный и функциональный дом подкупает простотой решений. Простая
+                        форма и двухскатная кровля позволяет вести строительство быстро и достаточно экономично. Комнаты
+                        сделаны максимально просторными за счет маленьких технических и коммуникационных помещений.
+                    </div>
+                    <div class="project__descriptions">
+                        <div class="description">
+                            145 м <sub>2</sub>
+                        </div>
+                        <div class="description">
+                            3<br> спальни
+                        </div>
+                        <div class="description">
+                            2<br> санузла
+                        </div>
+                    </div>
+                    <button type="button" class="btn project__button project__button-first">Получить консультацию</button>
+                    <button type="button"
+                            class="button-transparent project__button project__button-border download-btn">Скачать
+                        PDF-план проекта (2,5
+                        мб)
+                    </button>
+                </div>
+            </div>
+            <div class="project project__more wow animate__backInLeft">
+                <div class="project__gallery">
+                    <a href="images/house/house006-01.jpg">
+                        <img src="images/house/house006-01.jpg" alt="" width="588px" height="390px">
+                    </a>
+                    <div class="project__gallery-flex">
+                        <a href="images/house/house003-2.png">
+                            <img src="images/house/house003-2.png" alt="">
+                        </a>
+                        <a href="images/house/house003-3.png">
+                            <img src="images/house/house003-3.png" alt="">
+                        </a>
+                        <a href="images/house/house003-4.png">
+                            <img src="images/house/house003-4.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="project__content">
+                    <div class="project__name">Modern house 006</div>
+                    <div class="project__info">Компактный и функциональный дом подкупает простотой решений. Простая
+                        форма и двухскатная кровля позволяет вести строительство быстро и достаточно экономично. Комнаты
+                        сделаны максимально просторными за счет маленьких технических и коммуникационных помещений.
+                    </div>
+                    <div class="project__descriptions">
+                        <div class="description">
+                            145 м <sub>2</sub>
+                        </div>
+                        <div class="description">
+                            3<br> спальни
+                        </div>
+                        <div class="description">
+                            2<br> санузла
+                        </div>
+                    </div>
+                    <button type="button" class="btn project__button project__button-first">Получить консультацию</button>
+                    <button type="button"
+                            class="button-transparent project__button project__button-border download-btn">Скачать
+                        PDF-план проекта (2,5
+                        мб)
+                    </button>
+                </div>
+            </div>
+            <div class="project project__more wow animate__backInRight">
+                <div class="project__gallery">
+                    <a href="images/house/house007-01.jpg">
+                        <img src="images/house/house007-01.jpg" alt="" width="588px" height="390px">
+                    </a>
+                    <div class="project__gallery-flex">
+                        <a href="images/house/house003-2.png">
+                            <img src="images/house/house003-2.png" alt="">
+                        </a>
+                        <a href="images/house/house003-3.png">
+                            <img src="images/house/house003-3.png" alt="">
+                        </a>
+                        <a href="images/house/house003-4.png">
+                            <img src="images/house/house003-4.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="project__content">
+                    <div class="project__name">Modern house 007</div>
+                    <div class="project__info">Компактный и функциональный дом подкупает простотой решений. Простая
+                        форма и двухскатная кровля позволяет вести строительство быстро и достаточно экономично. Комнаты
+                        сделаны максимально просторными за счет маленьких технических и коммуникационных помещений.
+                    </div>
+                    <div class="project__descriptions">
+                        <div class="description">
+                            145 м <sub>2</sub>
+                        </div>
+                        <div class="description">
+                            3<br> спальни
+                        </div>
+                        <div class="description">
+                            2<br> санузла
+                        </div>
+                    </div>
+                    <button type="button" class="btn project__button project__button-first">Получить консультацию</button>
+                    <button type="button"
+                            class="button-transparent project__button project__button-border download-btn">Скачать
+                        PDF-план проекта (2,5
+                        мб)
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="projects__next">
+            <button type="button" id="more-projects">
+                Посмотреть еще 3 проекта
+            </button>
+            <svg xmlns="http://www.w3.org/2000/svg" width="27" height="20" viewBox="0 0 392 448">
+                <path fill="currentColor"
+                      d="m192 284l186-162q15-17 2-30q-17-17-30-2L192 228L36 90Q23 75 6 92q-14 14 3 30z"/>
+            </svg>
+        </div>
+    </div>
+</section>
+
+<section class="technologies" id="technologies">
+    <div class="container">
+        <h2 class="technologies__title">Технологии строительства</h2>
+        <div class="technologies__wrapper wow animate__bounceIn">
+            <div class="technologies__house">
+                <img src="images/house.png" alt="house">
+
+            <div class="technology__item technology__item-first">
+                <div class="technology__arrow-block">
+                    <div class="technology__arrow technology__arrow-1">
+                        <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                width="205.5px" height="18.5px">
+                            <path fill-rule="evenodd" stroke="rgb(236, 198, 107)" stroke-width="1px"
+                                  stroke-linecap="butt" stroke-linejoin="miter" fill="none"
+                                  d="M203.720,17.499 L193.201,4.111 L0.513,2.055 "/>
+                        </svg>
+                    </div>
+                    <div class="technology__ellipse technology__ellipse-1" id="technology__ellipse-1">
+                        <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                width="78.5px" height="78.5px">
+                            <defs>
+                                <filter filterUnits="userSpaceOnUse" id="Filter_0" x="0px" y="0px" width="78px"
+                                        height="78px">
+                                    <feOffset in="SourceAlpha" dx="0" dy="0"/>
+                                    <feGaussianBlur result="blurOut" stdDeviation="5.477"/>
+                                    <feFlood flood-color="rgb(0, 0, 0)" result="floodOut"/>
+                                    <feComposite operator="atop" in="floodOut" in2="blurOut"/>
+                                    <feComponentTransfer>
+                                        <feFuncA type="linear" slope="1"/>
+                                    </feComponentTransfer>
+                                    <feMerge>
+                                        <feMergeNode/>
+                                        <feMergeNode in="SourceGraphic"/>
+                                    </feMerge>
+                                </filter>
+
+                            </defs>
+                            <g filter="url(#Filter_0)">
+                                <path fill-rule="evenodd" fill="rgb(236, 198, 107)"
+                                      d="M38.500,31.000 C42.642,31.000 46.000,34.358 46.000,38.500 C46.000,42.642 42.642,46.000 38.500,46.000 C34.358,46.000 31.000,42.642 31.000,38.500 C31.000,34.358 34.358,31.000 38.500,31.000 Z"/>
+                            </g>
+                            <path fill-rule="evenodd" stroke="rgb(236, 198, 107)" stroke-width="1px"
+                                  stroke-linecap="butt" stroke-linejoin="miter" fill="none"
+                                  d="M38.500,25.1000 C45.404,25.1000 50.1000,31.596 50.1000,38.500 C50.1000,45.404 45.404,51.000 38.500,51.000 C31.596,51.000 25.1000,45.404 25.1000,38.500 C25.1000,31.596 31.596,25.1000 38.500,25.1000 Z"/>
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="technology__info" id="technology__info-1">
+                    <div class="technology__title">Неразрывный каркас</div>
+                    <div class="technology__text">Монтаж стен этажей внутри дома и по всему периметру выполняется
+                        единым
+                        массивом.
+                    </div>
+                </div>
+            </div>
+
+            <div class="technology__item technology__item-second">
+                <div class="technology__arrow-block">
+                    <div class="technology__arrow technology__arrow-2">
+                        <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                width="105.5px" height="20.5px">
+                            <path fill-rule="evenodd" stroke="rgb(236, 198, 107)" stroke-width="1px"
+                                  stroke-linecap="butt" stroke-linejoin="miter" fill="none"
+                                  d="M104.500,1.500 L91.500,19.500 L0.500,18.500 "/>
+                        </svg>
+                    </div>
+                    <div class="technology__ellipse technology__ellipse-2 " id="technology__ellipse-2">
+                        <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                width="78.5px" height="78.5px">
+                            <defs>
+                                <filter filterUnits="userSpaceOnUse" id="Filter_0" x="0px" y="0px" width="78px"
+                                        height="78px">
+                                    <feOffset in="SourceAlpha" dx="0" dy="0"/>
+                                    <feGaussianBlur result="blurOut" stdDeviation="5.477"/>
+                                    <feFlood flood-color="rgb(0, 0, 0)" result="floodOut"/>
+                                    <feComposite operator="atop" in="floodOut" in2="blurOut"/>
+                                    <feComponentTransfer>
+                                        <feFuncA type="linear" slope="1"/>
+                                    </feComponentTransfer>
+                                    <feMerge>
+                                        <feMergeNode/>
+                                        <feMergeNode in="SourceGraphic"/>
+                                    </feMerge>
+                                </filter>
+
+                            </defs>
+                            <g filter="url(#Filter_0)">
+                                <path fill-rule="evenodd" fill="rgb(236, 198, 107)"
+                                      d="M38.500,31.000 C42.642,31.000 46.000,34.358 46.000,38.500 C46.000,42.642 42.642,46.000 38.500,46.000 C34.358,46.000 30.1000,42.642 30.1000,38.500 C30.1000,34.358 34.358,31.000 38.500,31.000 Z"/>
+                            </g>
+                            <path fill-rule="evenodd" stroke="rgb(236, 198, 107)" stroke-width="1px"
+                                  stroke-linecap="butt" stroke-linejoin="miter" fill="none"
+                                  d="M38.500,26.000 C45.404,26.000 51.000,31.597 51.000,38.500 C51.000,45.403 45.404,50.1000 38.500,50.1000 C31.596,50.1000 25.1000,45.403 25.1000,38.500 C25.1000,31.597 31.596,26.000 38.500,26.000 Z"/>
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="technology__info" id="technology__info-2">
+                    <div class="technology__title">Диагональный раскос</div>
+                    <div class="technology__text">Система диагональных раскосов позволяет создать оптимальный
+                        вентиляционный зазор для капитальных стен и наружной отделки
+                    </div>
+                </div>
+            </div>
+
+            <div class="technology__item technology__item-three">
+                <div class="technology__arrow-block">
+                    <div class="technology__arrow technology__arrow-3">
+                        <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                width="96.5px" height="19.5px">
+                            <path fill-rule="evenodd" stroke="rgb(236, 198, 107)" stroke-width="1px"
+                                  stroke-linecap="butt" stroke-linejoin="miter" fill="none"
+                                  d="M1.500,0.500 L13.500,17.500 L95.500,16.500 "/>
+                        </svg>
+                    </div>
+                    <div class="technology__ellipse technology__ellipse-3" id="technology__ellipse-3">
+                        <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                width="78.5px" height="78.5px">
+                            <defs>
+                                <filter filterUnits="userSpaceOnUse" id="Filter_0" x="0px" y="0px" width="78px"
+                                        height="78px">
+                                    <feOffset in="SourceAlpha" dx="0" dy="0"/>
+                                    <feGaussianBlur result="blurOut" stdDeviation="5.477"/>
+                                    <feFlood flood-color="rgb(0, 0, 0)" result="floodOut"/>
+                                    <feComposite operator="atop" in="floodOut" in2="blurOut"/>
+                                    <feComponentTransfer>
+                                        <feFuncA type="linear" slope="1"/>
+                                    </feComponentTransfer>
+                                    <feMerge>
+                                        <feMergeNode/>
+                                        <feMergeNode in="SourceGraphic"/>
+                                    </feMerge>
+                                </filter>
+
+                            </defs>
+                            <g filter="url(#Filter_0)">
+                                <path fill-rule="evenodd" fill="rgb(236, 198, 107)"
+                                      d="M38.500,31.000 C42.642,31.000 45.1000,34.358 45.1000,38.500 C45.1000,42.642 42.642,45.1000 38.500,45.1000 C34.358,45.1000 30.1000,42.642 30.1000,38.500 C30.1000,34.358 34.358,31.000 38.500,31.000 Z"/>
+                            </g>
+                            <path fill-rule="evenodd" stroke="rgb(236, 198, 107)" stroke-width="1px"
+                                  stroke-linecap="butt" stroke-linejoin="miter" fill="none"
+                                  d="M38.500,25.1000 C45.404,25.1000 51.000,31.596 51.000,38.500 C51.000,45.404 45.404,51.000 38.500,51.000 C31.596,51.000 25.1000,45.404 25.1000,38.500 C25.1000,31.596 31.596,25.1000 38.500,25.1000 Z"/>
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="technology__info" id="technology__info-3">
+                    <div class="technology__title">Сборка силовых узлов</div>
+                    <div class="technology__text">Основные силовые узлы наших домов оцинкованы, что позволяет быть
+                        уверенными в исключительной прочности и долговечности конструкции
+                    </div>
+                </div>
+            </div>
+
+            <div class="technology__item technology__item-four">
+                <div class="technology__arrow-block">
+                    <div class="technology__arrow technology__arrow-4" >
+                        <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                width="213.5px" height="28.5px">
+                            <path fill-rule="evenodd" stroke="rgb(236, 198, 107)" stroke-width="1px"
+                                  stroke-linecap="butt" stroke-linejoin="miter" fill="none"
+                                  d="M1.500,0.500 L15.500,26.500 L212.500,24.500 "/>
+                        </svg>
+                    </div>
+                    <div class="technology__ellipse technology__ellipse-4" id="technology__ellipse-4">
+                        <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                width="78.5px" height="78.5px">
+                            <defs>
+                                <filter filterUnits="userSpaceOnUse" id="Filter_0" x="0px" y="0px" width="78px"
+                                        height="78px">
+                                    <feOffset in="SourceAlpha" dx="0" dy="0"/>
+                                    <feGaussianBlur result="blurOut" stdDeviation="5.477"/>
+                                    <feFlood flood-color="rgb(0, 0, 0)" result="floodOut"/>
+                                    <feComposite operator="atop" in="floodOut" in2="blurOut"/>
+                                    <feComponentTransfer>
+                                        <feFuncA type="linear" slope="1"/>
+                                    </feComponentTransfer>
+                                    <feMerge>
+                                        <feMergeNode/>
+                                        <feMergeNode in="SourceGraphic"/>
+                                    </feMerge>
+                                </filter>
+
+                            </defs>
+                            <g filter="url(#Filter_0)">
+                                <path fill-rule="evenodd" fill="rgb(236, 198, 107)"
+                                      d="M38.500,30.1000 C42.642,30.1000 45.1000,34.358 45.1000,38.500 C45.1000,42.642 42.642,45.1000 38.500,45.1000 C34.358,45.1000 30.1000,42.642 30.1000,38.500 C30.1000,34.358 34.358,30.1000 38.500,30.1000 Z"/>
+                            </g>
+                            <path fill-rule="evenodd" stroke="rgb(236, 198, 107)" stroke-width="1px"
+                                  stroke-linecap="butt" stroke-linejoin="miter" fill="none"
+                                  d="M38.500,26.000 C45.404,26.000 51.000,31.597 51.000,38.500 C51.000,45.403 45.404,50.1000 38.500,50.1000 C31.596,50.1000 26.000,45.403 26.000,38.500 C26.000,31.597 31.596,26.000 38.500,26.000 Z"/>
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="technology__info" id="technology__info-4">
+                    <div class="technology__title">Плитная ветрозащита</div>
+                    <div class="technology__text">Используемая влагостойкая ветрозащитная плита обеспечивает
+                        дополнительную шумоизоляцию стен
+                    </div>
+                </div>
+            </div>
+
+            <div class="technology__item technology__item-five">
+                <div class="technology__arrow-block">
+                    <div class="technology__arrow technology__arrow-5" >
+                        <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                width="140.5px" height="17.5px">
+                            <path fill-rule="evenodd" stroke="rgb(236, 198, 107)" stroke-width="1px"
+                                  stroke-linecap="butt" stroke-linejoin="miter" fill="none"
+                                  d="M0.500,15.677 L19.428,0.500 L139.500,1.500 "/>
+                        </svg>
+                    </div>
+                    <div class="technology__ellipse technology__ellipse-5" id="technology__ellipse-5">
+                        <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                width="78.5px" height="78.5px">
+                            <defs>
+                                <filter filterUnits="userSpaceOnUse" id="Filter_0" x="0px" y="0px" width="78px"
+                                        height="78px">
+                                    <feOffset in="SourceAlpha" dx="0" dy="0"/>
+                                    <feGaussianBlur result="blurOut" stdDeviation="5.477"/>
+                                    <feFlood flood-color="rgb(0, 0, 0)" result="floodOut"/>
+                                    <feComposite operator="atop" in="floodOut" in2="blurOut"/>
+                                    <feComponentTransfer>
+                                        <feFuncA type="linear" slope="1"/>
+                                    </feComponentTransfer>
+                                    <feMerge>
+                                        <feMergeNode/>
+                                        <feMergeNode in="SourceGraphic"/>
+                                    </feMerge>
+                                </filter>
+
+                            </defs>
+                            <g filter="url(#Filter_0)">
+                                <path fill-rule="evenodd" fill="rgb(236, 198, 107)"
+                                      d="M38.500,30.1000 C42.642,30.1000 45.1000,34.358 45.1000,38.500 C45.1000,42.642 42.642,45.1000 38.500,45.1000 C34.358,45.1000 30.1000,42.642 30.1000,38.500 C30.1000,34.358 34.358,30.1000 38.500,30.1000 Z"/>
+                            </g>
+                            <path fill-rule="evenodd" stroke="rgb(236, 198, 107)" stroke-width="1px"
+                                  stroke-linecap="butt" stroke-linejoin="miter" fill="none"
+                                  d="M38.500,26.000 C45.404,26.000 51.000,31.597 51.000,38.500 C51.000,45.403 45.404,50.1000 38.500,50.1000 C31.596,50.1000 26.000,45.403 26.000,38.500 C26.000,31.597 31.596,26.000 38.500,26.000 Z"/>
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="technology__info" id="technology__info-5">
+                    <div class="technology__title">5 камерные окна</div>
+                    <div class="technology__text">Обеспечивает исключительную сохранность тепла в доме
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="technologies__card">
+                <div class="technology__title"></div>
+                <div class="technology__text"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="steps" id="steps">
+    <div class="container">
+        <h2 class="steps__title">6 шагов к вашему новому дому</h2>
+        <div class="steps__wrapper">
+
+
+            <div class="step__item wow animate__fadeInLeft">
+                <div class="step__number">01</div>
+                <div class="step__body">
+                    <div class="step__icon">
+                        <img src="images/steps/chat.png" alt="">
+                    </div>
+                    <div class="step__text">
+                        <div class="step__title">Заявка на сайте</div>
+                        <div class="step__desc">Вы <span>оставляете заявку</span> на сайте, или звоните нам +380 (96)
+                            73-67-281
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="step__item wow animate__fadeInDown">
+                <div class="step__number">02</div>
+                <div class="step__body">
+                    <div class="step__icon">
+                        <img src="images/steps/phone-call.png" alt="">
+                    </div>
+                    <div class="step__text">
+                        <div class="step__title">Звонок менеджера</div>
+                        <div class="step__desc">Мы связываемся с вами для уточнения деталей и выбираем время для
+                            встречи
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="step__item wow animate__fadeInRight">
+                <div class="step__number">03</div>
+                <div class="step__body">
+                    <div class="step__icon">
+                        <img src="images/steps/phone-call.png" alt="">
+                    </div>
+                    <div class="step__text">
+                        <div class="step__title">Встреча</div>
+                        <div class="step__desc">Встречаемся на вашем участке и делаем все необходимые замеры
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="step__item wow animate__fadeInLeft">
+                <div class="step__number">04</div>
+                <div class="step__body">
+                    <div class="step__icon">
+                        <img src="images/steps/contract.png" alt="">
+                    </div>
+                    <div class="step__text">
+                        <div class="step__title">Договор</div>
+                        <div class="step__desc">Заключаем договор с четко указанными сроками
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="step__item wow animate__fadeInUp">
+                <div class="step__number">05</div>
+                <div class="step__body">
+                    <div class="step__icon">
+                        <img src="images/steps/technics.png" alt="">
+                    </div>
+                    <div class="step__text">
+                        <div class="step__title">Строительство</div>
+                        <div class="step__desc">Наша бригада приступает к выполнению работ
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="step__item wow animate__fadeInRight">
+                <div class="step__number">06</div>
+                <div class="step__body">
+                    <div class="step__icon">
+                        <img src="images/steps/house.png" alt="">
+                    </div>
+                    <div class="step__text">
+                        <div class="step__title">Ваш дом</div>
+                        <div class="step__desc">Вы заезжаете в свой новый дом!
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="gallery" id="gallery">
+    <div class="container">
+        <h2 class="gallery__title">Построили более 200 домов за 10 лет</h2>
+
+        <div class="image-slider swiper">
+            <div class="swiper-button swiper-button-prev"></div>
+            <div class="swiper-button swiper-button-next"></div>
+
+            <div class="image-slider__wrapper swiper-wrapper">
+
+                <div  class="image-slider__slide swiper-slide">
+                    <div class="image-slider__image">
+                        <img src="images/gallery/slide3.png" alt="">
+                    </div>
+                </div>
+
+                <div  class="image-slider__slide swiper-slide">
+                    <div class="image-slider__image">
+                        <img src="images/gallery/slide1.png" alt="">
+                    </div>
+                </div>
+
+                <div  class="image-slider__slide swiper-slide">
+                    <div class="image-slider__image">
+                        <img src="images/gallery/slide2.png" alt="">
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="swiper-pagination"></div>
+
+        </div>
+    </div>
+
+</section>
+
+<section class="conditions" id="conditions">
+    <div class="container">
+        <h2 class="conditions__title">Гарантии и условия оплаты</h2>
+        <div class="conditions__content">
+            <div class="conditions__top">
+
+                <div class="condition">
+                    <img src="images/calendar.png" alt="calendar" class="condition__img">
+                    <div class="condition__text">
+                        <p class="condition__title">Гарантия сроков</p>
+                        <p class="condition__desk">Юридическая гарантия сроков.<br>
+                            До 0.1 % от суммы за каждый день просрочки</p>
+                    </div>
+                </div>
+
+                <div class="condition">
+                    <img src="images/insurance.png" alt="calendar" class="condition__img">
+                    <div class="condition__text">
+                        <p class="condition__title">Страховка</p>
+                        <p class="condition__desk">Гарантия 10 лет. Страховка дома. Обработка дома. Сервисное
+                            обслуживание
+                    </div>
+                </div>
+
+            </div>
+            <div class="conditions__bottom">
+                <div class="condition">
+                    <div class="condition__img">
+                        <img src="images/writing.png" alt="writing">
+                    </div>
+                    <div class="condition__title">Гарантия фиксированной сметы</div>
+                    <div class="condition__desc">Все непредсказуемые расходы компенсируем за свой счет</div>
+                </div>
+                <div class="condition">
+                    <div class="condition__img">
+                        <img src="images/people.png" alt="people">
+                    </div>
+                    <div class="condition__title">Без посредников</div>
+                    <div class="condition__desc">Мы сами выполняем все работы и несем за них ответственность</div>
+                </div>
+                <div class="condition">
+                    <div class="condition__img">
+                        <img src="images/coin.png" alt="coin">
+                    </div>
+                    <div class="condition__title">Оплата по факту</div>
+                    <div class="condition__desc">Оплата всех работ по факту их выполнения</div>
+                </div>
+            </div>
+            <button class="conditions__button download-btn">Скачать PDF-пример договора (1,3 мб)</button>
+        </div>
+    </div>
+</section>
+
+<section class="consultation wow animate__backInRight" id="consultation">
+    <div class="container">
+        <div class="consultation__image">
+            <img src="images/consultation-img.png" alt="">
+        </div>
+        <div class="consultation__content">
+            <h2 class="consultation__title">Получите индивидуальную консультацию</h2>
+            <form action="" class="form consultation__form" id="consultation__form">
+                <input type="text" autocomplete="off" class="form__input consultation__input" placeholder="Ваше имя"
+                       id="consultation__input-name">
+                <div class="input-error">Введите имя</div>
+                <input type="text" autocomplete="off" class="form__input consultation__input input-phone"
+                       placeholder="Ваш телефон" id="consultation__input-phone">
+                <div class="input-error">Ввведите телефон</div>
+                <button type="button" class="btn form__button consultation__button" id="consultation-button">Нужна
+                    консультация
+                </button>
+                <label class="consultation-politic">
+                    <input type="checkbox" name="politic" id="politic" class="form__checkbox consultation__checkbox">
+                    <svg viewBox="0 0 64 64" height="20px" width="20px">
+                        <path d="M 0 16 V 56 A 8 8 90 0 0 8 64 H 56 A 8 8 90 0 0 64 56 V 8 A 8 8 90 0 0 56 0 H 8 A 8 8 90 0 0 0 8 V 16 L 32 48 L 64 16 V 8 A 8 8 90 0 0 56 0 H 8 A 8 8 90 0 0 0 8 V 56 A 8 8 90 0 0 8 64 H 56 A 8 8 90 0 0 64 56 V 16"
+                              pathLength="575.0541381835938" class="path"></path>
+                    </svg>
+                    <span>
+                        Нажимая на кнопку, я даю согласие на обработку персональных данных и соглашаюсь с <span>политикой конфиденциальности</span>
+                    </span>
+                </label>
+            </form>
+            <div class="form-success">
+                <p>Спасибо, мы свяжемся с вами в ближайшее время!</p>
+            </div>
+            <div class="form-error">
+                <p>На данный момент идут технические работы</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="record">
+    <!--    <img src="images/map.png" alt="" class="record__img">-->
+    <div class="container">
+        <div class="record__wrapper">
+            <h2 class="record__title">Запишитесь на экскурсию</h2>
+            <p class="record__text">
+                В готовые дома, чтобы лично убедиться в качестве нашей работы
+            </p>
+            <button class="btn record__button" id="record-popup-open">Записаться</button>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer__address">
+            <p class="address__text">г. Киев, бульвар Кольцова, 14-Ж</p>
+            <p class="address__time">Пн-Пт: 10:00 -19:00</p>
+        </div>
+        <div class="footer__logo-social">
+            <img src="images/logo.png" class="logo" alt="">
+            <div class="social">
+                <a href="#">
+                    <svg width="35px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M12 18C15.3137 18 18 15.3137 18 12C18 8.68629 15.3137 6 12 6C8.68629 6 6 8.68629 6 12C6 15.3137 8.68629 18 12 18ZM12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z"
+                              fill="#ffffff"/>
+                        <path d="M18 5C17.4477 5 17 5.44772 17 6C17 6.55228 17.4477 7 18 7C18.5523 7 19 6.55228 19 6C19 5.44772 18.5523 5 18 5Z"
+                              fill="#ffffff"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M1.65396 4.27606C1 5.55953 1 7.23969 1 10.6V13.4C1 16.7603 1 18.4405 1.65396 19.7239C2.2292 20.8529 3.14708 21.7708 4.27606 22.346C5.55953 23 7.23969 23 10.6 23H13.4C16.7603 23 18.4405 23 19.7239 22.346C20.8529 21.7708 21.7708 20.8529 22.346 19.7239C23 18.4405 23 16.7603 23 13.4V10.6C23 7.23969 23 5.55953 22.346 4.27606C21.7708 3.14708 20.8529 2.2292 19.7239 1.65396C18.4405 1 16.7603 1 13.4 1H10.6C7.23969 1 5.55953 1 4.27606 1.65396C3.14708 2.2292 2.2292 3.14708 1.65396 4.27606ZM13.4 3H10.6C8.88684 3 7.72225 3.00156 6.82208 3.0751C5.94524 3.14674 5.49684 3.27659 5.18404 3.43597C4.43139 3.81947 3.81947 4.43139 3.43597 5.18404C3.27659 5.49684 3.14674 5.94524 3.0751 6.82208C3.00156 7.72225 3 8.88684 3 10.6V13.4C3 15.1132 3.00156 16.2777 3.0751 17.1779C3.14674 18.0548 3.27659 18.5032 3.43597 18.816C3.81947 19.5686 4.43139 20.1805 5.18404 20.564C5.49684 20.7234 5.94524 20.8533 6.82208 20.9249C7.72225 20.9984 8.88684 21 10.6 21H13.4C15.1132 21 16.2777 20.9984 17.1779 20.9249C18.0548 20.8533 18.5032 20.7234 18.816 20.564C19.5686 20.1805 20.1805 19.5686 20.564 18.816C20.7234 18.5032 20.8533 18.0548 20.9249 17.1779C20.9984 16.2777 21 15.1132 21 13.4V10.6C21 8.88684 20.9984 7.72225 20.9249 6.82208C20.8533 5.94524 20.7234 5.49684 20.564 5.18404C20.1805 4.43139 19.5686 3.81947 18.816 3.43597C18.5032 3.27659 18.0548 3.14674 17.1779 3.0751C16.2777 3.00156 15.1132 3 13.4 3Z"
+                              fill="#ffffff"/>
+                    </svg>
+                </a>
+                <a href="#">
+                    <svg width="35px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M23.1117 4.49449C23.4296 2.94472 21.9074 1.65683 20.4317 2.227L2.3425 9.21601C0.694517 9.85273 0.621087 12.1572 2.22518 12.8975L6.1645 14.7157L8.03849 21.2746C8.13583 21.6153 8.40618 21.8791 8.74917 21.968C9.09216 22.0568 9.45658 21.9576 9.70712 21.707L12.5938 18.8203L16.6375 21.8531C17.8113 22.7334 19.5019 22.0922 19.7967 20.6549L23.1117 4.49449ZM3.0633 11.0816L21.1525 4.0926L17.8375 20.2531L13.1 16.6999C12.7019 16.4013 12.1448 16.4409 11.7929 16.7928L10.5565 18.0292L10.928 15.9861L18.2071 8.70703C18.5614 8.35278 18.5988 7.79106 18.2947 7.39293C17.9906 6.99479 17.4389 6.88312 17.0039 7.13168L6.95124 12.876L3.0633 11.0816ZM8.17695 14.4791L8.78333 16.6015L9.01614 15.321C9.05253 15.1209 9.14908 14.9366 9.29291 14.7928L11.5128 12.573L8.17695 14.4791Z"
+                              fill="#ffffff"/>
+                    </svg>
+                </a>
+                <a href="#">
+                    <svg width="35px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M9.49614 7.13176C9.18664 6.9549 8.80639 6.95617 8.49807 7.13509C8.18976 7.31401 8 7.64353 8 8V16C8 16.3565 8.18976 16.686 8.49807 16.8649C8.80639 17.0438 9.18664 17.0451 9.49614 16.8682L16.4961 12.8682C16.8077 12.6902 17 12.3589 17 12C17 11.6411 16.8077 11.3098 16.4961 11.1318L9.49614 7.13176ZM13.9844 12L10 14.2768V9.72318L13.9844 12Z"
+                              fill="#ffffff"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M0 12C0 8.25027 0 6.3754 0.954915 5.06107C1.26331 4.6366 1.6366 4.26331 2.06107 3.95491C3.3754 3 5.25027 3 9 3H15C18.7497 3 20.6246 3 21.9389 3.95491C22.3634 4.26331 22.7367 4.6366 23.0451 5.06107C24 6.3754 24 8.25027 24 12C24 15.7497 24 17.6246 23.0451 18.9389C22.7367 19.3634 22.3634 19.7367 21.9389 20.0451C20.6246 21 18.7497 21 15 21H9C5.25027 21 3.3754 21 2.06107 20.0451C1.6366 19.7367 1.26331 19.3634 0.954915 18.9389C0 17.6246 0 15.7497 0 12ZM9 5H15C16.9194 5 18.1983 5.00275 19.1673 5.10773C20.0989 5.20866 20.504 5.38448 20.7634 5.57295C21.018 5.75799 21.242 5.98196 21.4271 6.23664C21.6155 6.49605 21.7913 6.90113 21.8923 7.83269C21.9973 8.80167 22 10.0806 22 12C22 13.9194 21.9973 15.1983 21.8923 16.1673C21.7913 17.0989 21.6155 17.504 21.4271 17.7634C21.242 18.018 21.018 18.242 20.7634 18.4271C20.504 18.6155 20.0989 18.7913 19.1673 18.8923C18.1983 18.9973 16.9194 19 15 19H9C7.08058 19 5.80167 18.9973 4.83269 18.8923C3.90113 18.7913 3.49605 18.6155 3.23664 18.4271C2.98196 18.242 2.75799 18.018 2.57295 17.7634C2.38448 17.504 2.20866 17.0989 2.10773 16.1673C2.00275 15.1983 2 13.9194 2 12C2 10.0806 2.00275 8.80167 2.10773 7.83269C2.20866 6.90113 2.38448 6.49605 2.57295 6.23664C2.75799 5.98196 2.98196 5.75799 3.23664 5.57295C3.49605 5.38448 3.90113 5.20866 4.83269 5.10773C5.80167 5.00275 7.08058 5 9 5Z"
+                              fill="#ffffff"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <div class="contact">
+            <a href="tel:+380967367281" class="contact-phone">+380 (96) 73-67-281</a>
+            <a href="#" class="contact-link">
+                <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        width="32.5px" height="32.5px">
+                    <path fill-rule="evenodd" stroke="rgb(236, 198, 107)" stroke-width="1px" stroke-linecap="butt"
+                          stroke-linejoin="miter" fill="none"
+                          d="M15.1000,1.000 C24.284,1.000 30.1000,7.716 30.1000,16.000 C30.1000,24.284 24.284,30.1000 15.1000,30.1000 C7.716,30.1000 0.1000,24.284 0.1000,16.000 C0.1000,7.716 7.716,1.000 15.1000,1.000 Z"/>
+                    <path fill-rule="evenodd" stroke="rgb(236, 198, 107)" stroke-width="1px" stroke-linecap="butt"
+                          stroke-linejoin="miter" fill="none"
+                          d="M16.004,7.002 C20.975,7.002 25.004,11.031 25.004,16.002 C25.004,20.972 20.975,25.002 16.004,25.002 C11.034,25.002 7.004,20.972 7.004,16.002 C7.004,11.031 11.034,7.002 16.004,7.002 Z"/>
+                    <path fill-rule="evenodd" fill="rgb(236, 198, 107)"
+                          d="M15.1000,12.500 C17.933,12.500 19.500,14.067 19.500,16.000 C19.500,17.933 17.933,19.500 15.1000,19.500 C14.067,19.500 12.500,17.933 12.500,16.000 C12.500,14.067 14.067,12.500 15.1000,12.500 Z"/>
+                </svg>
+                <span>Заказать звонок</span>
+            </a>
+        </div>
+    </div>
+</footer>
+
+
+<div class="record__popup-wrapper">
+    <div class="record__popup">
+        <button class="popup__close" id="popup__close">
+            <img src="images/close-icon.png" alt="">
+        </button>
+        <div class="popup__wrapper">
+            <p class="popup__name">Пожалуйста, оставьте свои данные, чтобы мы могли связаться с вами и уточнить детали
+                предстоящей экскурсии</p>
+            <form action="" class="form" id="record__popup-form">
+                <input type="text" class="form__input consultation__input" placeholder="Ваше имя"
+                       id="record__input-name">
+                <div class="input-error">Введите имя</div>
+                <input type="text" class="form__input consultation__input input-phone" placeholder="Ваш телефон"
+                       id="record__input-phone">
+                <div class="input-error">Ввведите телефон</div>
+                <button type="button" class="form__button consultation__button" id="popup-btn">Нужна консультация
+                </button>
+                <label class="politic" style="margin-top: 10px">
+                    <input type="checkbox" name="politic" id="record-politic"
+                           class="form__checkbox consultation__checkbox">
+                    <svg viewBox="0 0 64 64" height="20px" width="20px">
+                        <path d="M 0 16 V 56 A 8 8 90 0 0 8 64 H 56 A 8 8 90 0 0 64 56 V 8 A 8 8 90 0 0 56 0 H 8 A 8 8 90 0 0 0 8 V 16 L 32 48 L 64 16 V 8 A 8 8 90 0 0 56 0 H 8 A 8 8 90 0 0 0 8 V 56 A 8 8 90 0 0 8 64 H 56 A 8 8 90 0 0 64 56 V 16"
+                              pathLength="575.0541381835938" class="path"></path>
+                    </svg>
+                    <span>
+                            Нажимая на кнопку, я даю согласие на обработку персональных данных и соглашаюсь с <span>политикой конфиденциальности</span>
+                        </span>
+                </label>
+            </form>
+            <div class="popup__success">
+                <p>Спасибо, мы свяжемся с вами в ближайшее время!.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="loader-wrap">
+    <span class="loader"></span>
+</div>
+
+
+<script src="src/scripts/jquery.js"></script>
+<script src="src/scripts/jquery.maskedinput.js"></script>
+<script src="wow.min.js"></script>
+<script src="src/scripts/jquery.magnific-popup.min.js"></script>
+<script src="src/scripts/swiper-bundle.min.js"></script>
+<script src="src/scripts/technologies.js"></script>
+<script type="module" src="src/scripts/script.js"></script>
+</body>
+</html>
